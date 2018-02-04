@@ -1,4 +1,4 @@
-package me.samv.wikipedia.activities
+package me.samv.wikipedia.wikipedia.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
