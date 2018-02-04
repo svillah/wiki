@@ -2,7 +2,9 @@ package me.samv.wikipedia.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.Toolbar
 import android.view.MenuItem
+import kotlinx.android.synthetic.main.activity_article_detail.*
 import me.samv.wikipedia.R
 
 /**
@@ -14,7 +16,7 @@ class ArticleDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_article_detail)
 
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar as Toolbar?)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true); //sets back button on LHS next to title
     }
 
