@@ -1,8 +1,10 @@
 package me.samv.wikipedia.wikipedia.holders
 
 import android.support.v7.widget.RecyclerView
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import me.samv.wikipedia.R
 
 /**
  * Created by svillaluz on 2018-02-10.

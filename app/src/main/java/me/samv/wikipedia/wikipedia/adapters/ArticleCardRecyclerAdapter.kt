@@ -16,7 +16,7 @@ class ArticleCardRecyclerAdapter() : RecyclerView.Adapter<CardHolder>() {
     }
 
     override fun onBindViewHolder(holder: CardHolder?, position: Int) { //how content gets updated on ViewHolder
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        //will update view
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): CardHolder {
