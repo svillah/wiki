@@ -17,5 +17,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/result_title"
         android:layout_gravity="center_vertical"
-        android:text="Oi!!!"/>
+        android:text="This ain't news!"/>
 </LinearLayout>
