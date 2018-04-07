@@ -5,18 +5,23 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import me.samv.wikipedia.R
 import me.samv.wikipedia.wikipedia.holders.CardHolder
+import me.samv.wikipedia.wikipedia.models.WikiPage
+import java.util.*
 
 /**
  * Created by svillaluz on 2018-02-10.
  */
 class ArticleCardRecyclerAdapter() : RecyclerView.Adapter<CardHolder>() {
 
+    val currentResults: ArrayList<WikiPage> = ArrayList<WikiPage>()
+
     override fun getItemCount(): Int { //num items recycler view will contain
-        return 15
+        return currentResults.size
     }
 
     override fun onBindViewHolder(holder: CardHolder?, position: Int) { //how content gets updated on ViewHolder
-        //will update view
+        var page = currentResults[position]
+        holder?.updateWithPage(page)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): CardHolder {
