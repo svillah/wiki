@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import com.google.gson.Gson
+import com.squareup.picasso.Picasso
 import me.samv.wikipedia.R
 import me.samv.wikipedia.wikipedia.activities.ArticleDetailActivity
 import me.samv.wikipedia.wikipedia.models.WikiPage
@@ -16,7 +17,7 @@ import me.samv.wikipedia.wikipedia.models.WikiPage
 class ListItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val articleImageView: ImageView = itemView.findViewById<ImageView>(R.id.result_icon)
     private val titleTextView: TextView = itemView.findViewById<TextView>(R.id.result_title)
-    private val currentPage: WikiPage? = null
+    private var currentPage: WikiPage? = null
 
     //passes pg currently bound to viewholder into intent to start activity
     init{
